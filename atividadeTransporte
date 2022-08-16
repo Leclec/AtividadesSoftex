@@ -1,0 +1,51 @@
+ATIVIDADE 5 - LOGICA DE PROGRAMAÇÅO E ORIENTAÇÅO A OBJETOS
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+Atividade Proposta:
+Elabore um algoritmo que possa descobrir, através de perguntas e respostas, qual meio de transporte o usuário está pensando.
+O usuário deverá escolher uma das seguintes opções:
+
+- Trator
+- Moto
+- Bicicleta
+- Trem
+- Carro
+- Caminhão
+- Ônibus
+- Paraquedas
+- Balão
+- Avião
+- Helicóptero
+- Submarino
+- Barco
+- Navio
+- Lancha
+
+Para chegar ao resultado, só devem ser usadas perguntas que retornem "Sim" ou "Não".
+
+Exemplo:
+É terrestre? Sim.
+Cabe apenas uma pessoa? Sim.
+É pesado? Não.
+Tem pedal? Sim.
+Então, o transporte escolhido foi a bicicleta.
+
+
+
+RESPOSTA
+
+Para tal atividade desenvolvi uma estrutua de decisão simples código em códiog python
+
+=====================================================================================
+print("É bike ou moto?\n")
+
+
+resposta = input("O transporte é de alta velocidade? 1 - sim | 2 - não ")
+#ai digita 1 para afirmação e 2 para negação
+if resposta == "1":
+    print("É moto!\n\n")
+else:
+    print("Então é bike!\n\n")
+
+print("Programa concluído!")
+=====================================================================================
