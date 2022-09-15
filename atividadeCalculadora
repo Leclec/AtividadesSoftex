@@ -1,0 +1,55 @@
+FORMAÇÃO SOFTEX BACK-END  - MÓDULO LÓGICA DE PROGRAMAÇÃO E ORIENTAÇÃO A OBJETOS
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Faça uma função calculadora de dois números com três parâmetros: os dois primeiros serão os números da operação e o terceiro será a entrada que definirá a operação a ser executada. Considera a seguinte definição:
+1. Soma
+2. Subtração
+3. Multiplicação
+4. Divisão
+
+RESPOSTA:
+
+print("CALCULADORA \n\n ")
+
+x = float(input("Primeiro numero: "))
+y = float(input("Segundo numero: "))
+
+def soma():
+    print("Soma: ",x+y)
+
+def subtracao():
+    print("Subtracao: ",x-y)
+
+def multiplicacao():
+    print("Multiplicacao: ",x*y)
+
+def divisao():
+    print("Divisao: ",x/y)
+
+opcao=1
+
+while opcao:
+    print("0. Sair")
+    print("1. Somar")
+    print("2. Subtrair")
+    print("3. Multiplicação")
+    print("4. Divisão ")
+    
+    opcao = int(input("Opção: "))
+
+    if(opcao==1):
+        soma()
+        break
+    if(opcao==2):
+        subtracao()
+        break
+    if(opcao==3):
+        multiplicacao()
+        break
+    if(opcao==4):
+        divisao()
+        break
+
+print("FIM")
