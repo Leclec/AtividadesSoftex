@@ -1,0 +1,19 @@
+LOGICA DE PROGRAMAÇÅO E ORIENTAÇÅØ A OBJETOS - ATIVIDADE 19
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Pesquise sobre os grafos e apresente dois exemplos de como são utilizados no contexto tecnológico.
+
+
+RESPOSTA
+
+Um dos grandes beneficiados com a modelagem em grafo é o SISTEMA DE RECOMENDAÇÅO de uma loja. Quando um site 
+apresenta “Quem comprou esse produto, também comprou esse”, ou “Itens relacionados ao seu histórico de navegação”; 
+os usuários e itens são vértices do grafo e os eventos de comprar ou visualizar um produto são as arestas.
+
+Outra grande aplicação dos grafos está no estudo de geolocalização, onde sua estratégia de logística tem que ser muito boa, 
+mas também precisará de algoritmos de grafos para otimizar o caminho (aresta) de suas entregas desde os galpões de 
+armazenamento (vértice) até o destino (outro vértice), no caso o endereço do comprador.
+
+fonte: https://itforum.com.br/noticias/grafos-e-o-comercio-eletronico-tudo-a-ver/
