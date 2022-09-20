@@ -53,3 +53,5 @@ Adaptador de classe - essa implementação utiliza herança: o adaptador herda i
 Quanto a aplicabilidade, pode-se utilizar a classe Adaptador quando você quer usar uma classe existente, mas sua interface não 
 for compatível com o resto do seu código ou utilizar o padrão quando se quer reutilizar diversas subclasses existentes que não 
 possuam alguma funcionalidade comum que não pode ser adicionada a superclasse.
+
+fonte: https://refactoring.guru/pt-br/design-patterns
