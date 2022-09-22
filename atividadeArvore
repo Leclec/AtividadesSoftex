@@ -1,0 +1,70 @@
+LÓGICA DE PROGRAMAÇÃO E ORIENTAÇÃO A OBJETOS - ATIVIDADE 20
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Crie uma árvore para cada lista abaixo, adicione um valor nela e remova outro, mas, em pelo menos uma das árvores, a remoção deve ser de um nó com dois filhos.
+Lista1 = 45,20,30,60,81,97,100,7,8,4
+Lista2 = 15,6,18,3,7,16,20,4
+
+
+RESPOSTA
+
+ÁRVORE Lista1
+
+                        45
+			       20	                      60
+     7		            30		                         97
+4		       8			                         81		               100
+
+
+
+acrescentando o valor 96: 
+
+				                         45
+			       20		                                   60
+	    7		          30		                                   96
+	4	    	8		                                        81	           97
+                            	                100
+                                
+
+
+
+removendo o valor 60:
+
+
+					                           45
+			           20				                             97
+	     7		                   30	            81	                 100
+ 4		        8				    
+ 
+
+
+ÀRVORE Lista2
+
+
+                                15
+                    6                          18
+            3             7            16             20
+               4
+               
+
+
+acrescentando o valor 19:
+
+
+                                15
+                    6                          18
+            3             7            16             20
+               4                                 19
+               
+               
+remover o valor 6:
+
+
+                                15
+                    4                          18
+            3             7            16             20
+               
+               
+               
