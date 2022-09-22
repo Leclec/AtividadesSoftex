@@ -1,0 +1,32 @@
+LOGICA DE PROGRAMACAO E ORIENTACAO A OBJETOS - ATIVIDADE 22
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Crie uma classe de sua preferência com, no mínimo, uma variável, um método e um incremento. 
+Depois, desenvolva três ou mais objetos para testar o código.
+
+
+RESPOSTA
+
+class Empregado:
+
+    def __init__(self, nome, salario):
+        self._nome = nome
+        self._salario = salario
+        
+    def get_salario(self):
+        print("O empregado ",self._nome, " recebe de salário R$ ", self._salario)
+    
+         
+f = Empregado ('João',3000)
+f.get_salario()
+f = Empregado ('Mauro', 2500)
+f.get_salario()
+f = Empregado ('Saulo', 1330)
+f.get_salario()
+
+
+O empregado  João  recebe de salário R$  3000
+O empregado  Mauro  recebe de salário R$  2500
+O empregado Saulo recebe de salário R$  1330
