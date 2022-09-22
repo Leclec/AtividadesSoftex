@@ -1,0 +1,25 @@
+LOGICA DE PROGRAMAÇAO E ORIENTAÇAO A OBJETOS - ATIVIDADE 25
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+
+ATIVIDADE PROPOSTA:
+
+Estruture três códigos, os quais devem conter uma função de manipulação de string que obtenha resultado.
+
+
+RESPOSTA
+
+#manipulação 1
+s = "O Oscar vai para..."
+print(s.lower())       
+"o oscar vai para..."
+
+#manipulação 2
+s = "O Oscar vai para..."
+print(s.upper())
+"O OSCAR VAI PARA..."
+
+# manipulação 3
+s = "O Oscar vai para..."
+print(len(s))
+19
