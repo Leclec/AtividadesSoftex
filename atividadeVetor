@@ -1,0 +1,31 @@
+LÓGICA DE PORGRAMAÇÃO E ORIENTAÇÃO A OBJETOS - ATIVIDADE 17
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Crie um vetor com ponteiros utilizando alocação dinâmica na linguagem C, que:
+
+- use a função realloc;
+- use a função sizeof;
+- que tenha tamanho 22 de vetor;
+- depois libere o bloco utilizando a função free.
+
+RESPOSTA
+
+a = 10;
+p = (int *)malloc(a * sizeof(int));
+if (!p)
+{
+    printf("Error: sem memoria");
+    exit;
+}
+
+for (i=0; i < a; i++) / * p pode ser tratado como um vetor com a posicoes * /
+    p[i] = i * i;
+a = 100;
+p = realloc(p, a * sizeof(int));
+for (i=0; i < a; i++);
+    p[i] = a * i * (i - 6);
+
+return 0;
+free(p);
