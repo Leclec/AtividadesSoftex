@@ -1,0 +1,19 @@
+LOGICA DE PROGRAMAÇÅO E ORIENTAÇÅO A OBJETOS - ATIVIDADE 27
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Crie uma situação em que ocorra uma exceção dentro de um código. Utilize try/catch para realizar a captura e tratamento dessa exceção. 
+
+
+RESPOSTA
+
+nomes = ["Paulo", "Pedro", "Plínio"]
+for tentativa in range(3):
+    try:
+        i = int(input("Digite o índice que deseja imprimir: "))
+        print(nomes[i])
+    except ValueError:
+        print("Digite um número")
+    except IndexError:
+        print("Valor inválido, digite entre -3 e 3")
