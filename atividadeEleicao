@@ -1,0 +1,57 @@
+LOGICA DE PROGRAMACAO E ORIENTACAO A OBJETOS ATIVIDADE 13
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Desenvolva um código que simule uma eleição com três candidatos.
+- candidato_X => 889
+- candidato_Y => 847
+- candidato_Z => 515
+- branco => 0
+
+O código deve perguntar se deseja finalizar a votação depois do voto. Caso o número do voto não corresponda a nenhum candidato
+ou seja branco, ele deve ser tratado como nulo. Se for inserido um texto ao invés de número, o código deve retornar uma mensagem 
+para votar novamente.
+
+Quando a votação for finalizada, o código deverá mostrar o vencedor, aquele com o maior número de votos e, também, a quantidade
+de votos de cada candidato, os brancos e nulos.
+
+
+
+RESPOSTA
+
+
+
+candidato1 = 889
+candidato2= 847
+candidato3 = 515
+nulo=0
+contador=1
+print('votos ')
+print('candidato1:',candidato1)
+print('candidato2:',candidato2)
+print('candidato3:',candidato3)
+print('nulos:',nulo)
+while contador != 0:
+  try:
+    voto=int(input('Digite seu voto'))
+    if voto==1:
+      candidato1=candidato1+1
+    elif voto==2:
+      candidato2=candidato2+1
+    elif voto==3:
+      candidato3=candidato3+1
+    elif voto==0:
+      nulo=nulo+1
+      print('Anulado!')
+    msg=str(input('Reiniciar votação? S/N'))
+    if msg=='n':
+      print('Fim')
+      print('candidato1:',candidato1)
+      print('candidato2:',candidato2)
+      print('candidato3:',candidato3)
+      print('votos nulos:',nulo)
+      contador=0
+  except:
+    print('Erro, tente novamente.')
+    contador=1
