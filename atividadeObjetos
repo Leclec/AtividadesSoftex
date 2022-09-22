@@ -1,0 +1,29 @@
+LOGICA DE PROGRAMAÇAO E ORIENTACAO A OBJETOS - ATIVIDADE 21
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PORPOSTA
+
+Classifique dois objetos materiais e dois abstratos. Insira, no mínimo, três métodos e três atributos para cada.
+
+
+RESPOSTA
+
+MATERIAIS:
+
+Carro:
+Preto, 180 cm, 850 kg.
+Viajar, Estacionar, acelerar.
+
+Celular;
+Preto,  10 cm, 500 g.
+Estudar, Trabalhar, Jogar.
+
+ABSTRATO:
+
+Trabalhar;
+Remuneração, deslocamento, lugar.
+Pagar, Prestar serviço, 
+
+Atividade Física;
+Exercício, corrida, alimentação.
+Descansar, Comer, Correr.
