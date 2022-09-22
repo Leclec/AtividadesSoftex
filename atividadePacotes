@@ -1,0 +1,22 @@
+LOGICA DE PROGRAMACAO E ORIENTACAO A OBJETOS - ATIVIDADE 24
+ALEX ARAUJO - alexhsaraujo@gmail.com    
+
+ATIVIDADE PROPOSTA
+
+Crie dois pacotes baseados nas atribuições de uma empresa e inclua classes neles. Lembre-se de trabalhar com os padrões Java.
+
+
+
+
+REPOSTA
+
+
+package entradaProduto;
+public class estoque {
+      //declarações de atributos e métodos
+}
+
+package vendaProduto;
+public class controleVendas {
+      //declarações de atributos e métodos
+}
