@@ -1,0 +1,25 @@
+LÓGICA DE PROGRAMAÇÃO E ORIENTAÇÕ A OBJETOS - ATIVIDADE 18
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Crie um tipo abstrato de dado (TAD) para manipular números complexos na linguagem Python.
+O método deve:
+
+- calcular três números complexos;
+- realizar todas as operações básicas;
+- e imprimir as propriedades real e img do números. 
+
+
+RESPOSTA
+
+a = 2 + 4j
+b = 3 + 5j
+print(a + b) 
+print(a - b) 
+print(a * b) # (2 + 4J)*(3 + 5J)
+print(a / b) # (2 + 4J / 3 + 5J)
+print(a.real) #1
+print(a.imag) #2
+print(b.real) #3
+print(b.imag) #4
