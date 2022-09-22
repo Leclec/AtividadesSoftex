@@ -1,0 +1,109 @@
+LOGICA DE PROGRAMAÇÃO E ORIENTAÇÃO A OBJETOS - ATIVIDADE 6
+ALEX ARAUJO - alexhsaraujo@gmail.com
+
+ATIVIDADE PROPOSTA
+
+Após uma prova de vestibular, uma escola quer identificar quantos dos seus alunos foram aprovados em cada turma de formandos. 
+Ela quer saber qual aluno teve a maior nota e de qual turma ele é. Nessa escola, há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos. Depois, informe quantos deles foram aprovados, de que turma são,
+qual a maior nota em cada turma e qual aluno teve a maior nota de todas.
+Para que o aluno seja aprovado no vestibular, ele deverá obter nota maior ou igual a 7.
+
+ATENÇÃO: As notas por turma não podem se repetir.
+
+
+RESPOSTA
+
+Var
+   // Seção de Declarações das variáveis
+   nomesTA: vetor [1..25] de caractere
+   nomesTB: vetor [1..25] de caractere
+   nomesTC: vetor [1..25] de caractere
+   nomesTD: vetor [1..25] de caractere
+
+   notasTA: vetor [1..25] de real
+   notasTB: vetor [1..25] de real
+   notasTC: vetor [1..25] de real
+   notasTD: vetor [1..25] de real
+
+   i,j,totA, totB, totC, totD, totap: inteiro
+   maior: real
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   totA <- 0
+   totB <- 0
+   totC <- 0
+   totD <- 0
+
+
+   para i <- 1 ate 25 faca
+      escreval ("TURMA A - ALUNO: ", i)
+      escreva ("NOME: ")
+      leia (nomesTA[i])
+      escreva ("NOTA: ")
+      leia (notasTA[i])
+   fimpara
+
+   para i <- 1 ate 25 faca
+      escreval ("TURMA B - ALUNO: ", i)
+      escreva ("NOME: ")
+      leia (nomesTB[i])
+      escreva ("NOTA: ")
+      leia (notasTB[i])
+   fimpara
+
+   para i <- 1 ate 25 faca
+      escreval ("TURMA C - ALUNO: ", i)
+      escreva ("NOME: ")
+      leia (nomesTC[i])
+      escreva ("NOTA: ")
+      leia (notasTC[i])
+   fimpara
+
+   para i <- 1 ate 25 faca
+      escreval ("TURMA D - ALUNO: ", i)
+      escreva ("NOME: ")
+      leia (nomesTD[i])
+      escreva ("NOTA: ")
+      leia (notasTD[i])
+   fimpara
+
+
+   para i<- 1 ate 25 faca
+      se (notasTA[i] >= 7) entao
+         totA <- totA+1
+         escreval ("Aprovados turma A: ",totA)
+      fimse
+      se (notasTB[i] >=7) entao
+         totB <- totB+1
+         escreval ("Aprovados turma B: ",totB)
+      fimse
+      se (notasTC[i] >= 7) entao
+         totC <- totC+1
+         escreval ("Aprovados turma C: ",totC)
+      fimse
+      se (notasTD[i] >= 7) entao
+         totD <- totD+1
+         escreval ("Aprovados turma D: ",totD)
+      fimse
+      totap <- totA+totB+totC+totD
+      escreval ("Total de ", totap," APROVADOS!")
+   fimpara
+
+   maior <- 0
+   para i<- 1 ate 24 faca
+      para j <- i+1 até 25 faca
+         se (notasTA[i]>notasTA[j]) entao
+            maior <- notasTA[i]
+            notasTA[i] <- notasTA[j]
+            notasTA[j] <- maior
+         fimse
+      fimpara
+   fimpara
+
+   para  i <- 1 ate 25 faca
+      escreval ("A maior nota foi ", maior)
+
+   fimpara
+
+Fimalgoritmo
